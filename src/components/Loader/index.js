@@ -1,3 +1,5 @@
+import generatorID from "../../utils/generatorID.js";
+import crearUsuario from "../../utils/CrearUsuario.js";
 import Styles from "./styles.css" assert { type: 'css' };
 
 const GlobalStyles = [ Styles ];
@@ -22,6 +24,8 @@ const Loader = () =>{
         
         setTimeout(() => {
             app.childNodes[0].remove();
+            const idGen = generatorID();
+            crearUsuario(idGen);
         }, 300);
     }, 3000);
 }
