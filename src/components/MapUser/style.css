@@ -1,0 +1,19 @@
+.container__map{
+    position: relative; 
+    width: 900px;
+    height: 900px;
+    background-color: #588A81;
+    border-radius: 50px;
+    max-height: 1080px;
+    overflow: hidden;
+}
+
+.container__map2{
+    position: absolute;
+    top: 90px;
+    right: 90px;
+    width: 720px;
+    height: 720px;
+    border-radius: 50px;
+    background-color: royalblue;
+}
