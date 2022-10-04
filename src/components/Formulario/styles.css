@@ -8,8 +8,9 @@
     max-width: 600px;
     height: auto;
     padding: 20px 0;
-    background-color: #96AB9A;
+    background-color: #588A81;
     border-radius: 20px;
+    transition: all .3s;
 }
 
 .form__container{
@@ -33,7 +34,7 @@
 .form__container--label{
     font-size: 2rem;
     font-weight: 700;
-    color: #212121;
+    color: aliceblue;
 }
 
 .form__container--input{
@@ -45,6 +46,12 @@
     border-radius: 20px;
     padding-left: 10px;
     background-color: #f2f2f2;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.form__container--input::placeholder{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 
@@ -55,7 +62,7 @@
     border: unset;
     font-size: 1.5rem;
     font-weight: 800;
-    color: #212121;
+    color: #444444;
     background-color: #e8e8e8;
     cursor: pointer;
     border-radius: 15px;
@@ -72,7 +79,7 @@
     width: 0;
     top: 0;
     left: 0;
-    background-color: #212121;
+    background-color: #2F4858;
     border-radius: 15px;
     transition: all 450ms;
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);

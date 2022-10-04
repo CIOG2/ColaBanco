@@ -1,3 +1,4 @@
+import Loader from "../Loader/index.js";
 import Styles from "./styles.css" assert { type: 'css' };
 
 const GlobalStyles = [ Styles ];
@@ -16,7 +17,7 @@ const validaciones = (I1, I2, I3, I4) => {
         return false;
     }
 
-    
+    Loader();
 }
 
 const Formulario = () =>{
