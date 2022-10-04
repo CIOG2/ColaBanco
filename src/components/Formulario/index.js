@@ -1,3 +1,4 @@
+import LocalStorage from "../../utils/localStorage.js"
 import Loader from "../Loader/index.js";
 import Styles from "./styles.css" assert { type: 'css' };
 
@@ -17,6 +18,13 @@ const validaciones = (I1, I2, I3, I4) => {
         return false;
     }
 
+    const obj = {
+        entrada: [N1, N2],
+        salida: [N3, N4],
+        cola: [],
+    }
+
+    LocalStorage().set('Data', obj)
     Loader();
 }
 
