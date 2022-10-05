@@ -1,3 +1,4 @@
+import MapUser from "../MapUser/index.js";
 import generatorID from "../../utils/generatorID.js";
 import crearUsuario from "../../utils/CrearUsuario.js";
 import Styles from "./styles.css" assert { type: 'css' };
@@ -25,7 +26,11 @@ const Loader = () =>{
         setTimeout(() => {
             app.childNodes[0].remove();
             const idGen = generatorID();
-            crearUsuario(idGen);
+            app.append(MapUser());
+            setTimeout(() => {
+                app.childNodes[0].style.opacity = "1"
+                crearUsuario(idGen);
+            }, 300);
         }, 300);
     }, 3000);
 }
