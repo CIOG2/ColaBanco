@@ -1,6 +1,6 @@
 import MapUser from "../MapUser/index.js";
 import generatorID from "../../utils/generatorID.js";
-import crearUsuario from "../../utils/CrearUsuario.js";
+import crearUsuario from "../../utils/crearUsuario.js";
 import Styles from "./styles.css" assert { type: 'css' };
 
 const GlobalStyles = [ Styles ];
