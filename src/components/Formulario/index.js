@@ -22,6 +22,7 @@ const validaciones = (I1, I2, I3, I4) => {
         entrada: [N1, N2],
         salida: [N3, N4],
         cola: [],
+        tiempoSalida: 0,
     }
 
     LocalStorage().set('Data', obj)
@@ -49,12 +50,14 @@ const Formulario = () =>{
     input1.id = "input1";
     input1.type = "number";
     input1.placeholder = "Maximo";
+    input1.value = "3";
     
     const input2 = document.createElement("input");
     input2.classList.add("form__container--input");
     input2.id = "input2";
     input2.type = "number";
     input2.placeholder = "Minimo";
+    input2.value = "1";
     
     
     
@@ -68,18 +71,20 @@ const Formulario = () =>{
     
     const inputContainer2 = document.createElement("div");
     inputContainer2.classList.add("form__container2");
-
+    
     const input3 = document.createElement("input");
     input3.classList.add("form__container--input");
     input3.id = "input3";
     input3.type = "number";
     input3.placeholder = "Maximo";
+    input3.value = "5";
     
     const input4 = document.createElement("input");
     input4.classList.add("form__container--input");
     input4.id = "input4";
     input4.type = "number";
     input4.placeholder = "Minimo";
+    input4.value = "5";
     
     const button = document.createElement("button");
     button.classList.add("btn__simulacro");
